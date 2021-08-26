@@ -27,6 +27,8 @@
        remote_src: yes
      - name: rename tomcat home
        command: mv /usr/local/apache-tomcat-8.5.70 /usr/local/tomcat
+     - name: starting tomcat
+       shell: nohup /usr/local/tomcat/bin/startup.sh
       
       
    
