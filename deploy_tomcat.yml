@@ -16,6 +16,9 @@
        name: java
        link: /usr/bin/java
        path: /usr/lib/jvm/jre-1.8.0-openjdk.x86_64/bin/java
+   - name: Downloading tomcat
+     get_url:
+      url: "https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.70/bin/apache-tomcat-8.5.70.tar.gz"
       
       
    
