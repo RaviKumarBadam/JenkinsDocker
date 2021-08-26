@@ -1,2 +1,2 @@
-[Dev]
-172.31.62.178 ansible_user=ec2_user
+[Deployment]
+172.31.94.69 ansible_user=ubuntu
