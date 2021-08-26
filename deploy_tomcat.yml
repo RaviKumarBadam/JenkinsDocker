@@ -11,5 +11,10 @@
    - name: Installing open JDK
      yum:
       name: java-1.8.0-openjdk
+   - name: Setting java default version
+     alternatives:
+       name: java
+       link: /usr/bin/java
+      
       
    
