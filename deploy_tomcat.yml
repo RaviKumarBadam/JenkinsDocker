@@ -1,6 +1,6 @@
 ---
  - name: Install java
-   hosts: deploy
+   hosts: Deployment
    gather_facts: true
    become: yes
    tasks:
