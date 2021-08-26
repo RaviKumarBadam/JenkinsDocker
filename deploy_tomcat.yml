@@ -19,6 +19,14 @@
    - name: Downloading tomcat
      get_url:
       url: "https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.70/bin/apache-tomcat-8.5.70.tar.gz"
+      dest: /usr/local
+    - name: extracting tomcat
+     unarchive:
+       src: "/usr/local/apache-tomcat-8.5.70.tar.gz"
+       dest: "/usr/local"
+       remote_src: yes
+     - name: rename tomcat home
+       command: mv /usr/local/apache-tomcat-8.5.70 /usr/local/tomcat
       
       
    
