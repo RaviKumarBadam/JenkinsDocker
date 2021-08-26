@@ -1,5 +1,5 @@
 ---
-- hosts: Dev
+- hosts: Deployment
   become: True
   tasks:
     - name: Install python pip
@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: raviapp
-        image: "rkb00856/raviproject:0.2"
+        image: "rkb00856/raviproject:{{ver}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
