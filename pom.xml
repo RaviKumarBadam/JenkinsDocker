@@ -5,7 +5,7 @@
   <artifactId>jenkinsdockerproject</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>dockeransible Maven Webapp</name>
+  <name>jenkinsdockerproject Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
